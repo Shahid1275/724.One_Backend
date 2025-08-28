@@ -28,7 +28,6 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Avoid model overwrite error in watch mode
 const User = mongoose.models.User || mongoose.model("User", userSchema);
 
 export default User;
